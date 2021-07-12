@@ -112,7 +112,7 @@ class PeerConnectionObserver implements PeerConnection.Observer, EventChannel.St
         init.negotiated = config.getBoolean("negotiated");
       }
     }
-    Log.i("create data channel " + label);
+    Log.d("create data channel " + label);
     DataChannel dataChannel = peerConnection.createDataChannel(label, init);
     // XXX RTP data channels are not defined by the WebRTC standard, have
     // been deprecated in Chromium, and Google have decided (in 2015) to no
